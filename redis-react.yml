@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-react
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-react
+  template:
+    metadata:
+      labels:
+        app: redis-react
+    spec:
+      containers:
+      - name: redis-react
+        image: cedricxxx/redis-react:latest
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-react-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: redis-react
+
