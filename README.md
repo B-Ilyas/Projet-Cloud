@@ -13,18 +13,19 @@ Avant de commencer le déploiement, assurez-vous d'avoir les outils suivants ins
 
 J'ai choisi de rendre l'architecture le plus simple possible en combinant la partie configuration du pod, du service du scaling de pour chaque fichiers de configuration yaml. J'ai aussi choisi par simplicité de garder tout les types de fichiers (script et config) dans le même répertoire. Aucun Dockerfile n'a été crée étant donné que l'on utilise kubernetes pour exploiter des images venant du docker hub. Vous devez donc trouver : 4 fichiers de script bash et 5 fichiers de configuration yaml.
 
-P1 &nbsp;
-├── clean.sh &nbsp;
-├── deploy.sh &nbsp;
-├── grafana.yml &nbsp;
-├── grafana.sh &nbsp;
-├── prometheus.yml &nbsp;
-├── prometheus.sh &nbsp;
-├── Rapport-P1.pdf &nbsp;
-├── README.md &nbsp;
-├── redis.yml &nbsp;
-├── redis-node.yml &nbsp;
-├── redis-react.yml &nbsp;
+P1  
+├── clean.sh  
+├── deploy.sh  
+├── grafana.yml  
+├── grafana.sh  
+├── prometheus.yml  
+├── prometheus.sh  
+├── Rapport-P1.pdf  
+├── README.md  
+├── redis.yml  
+├── redis-node.yml  
+├── redis-react.yml  
+
 
 ### Initialisation
 
