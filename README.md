@@ -5,9 +5,9 @@
 L’objectif de ce projet est de créer une infrastructure pour le projet redis-nodejs dans un cluster kubernetes. Pour observer le comportement des différents composants il faudra configurer un outil de monitoring: prometheus/grafana.
 Avant de commencer le déploiement, assurez-vous d'avoir les outils suivants installés sur votre machine linux :
 
-    Docker
-    Kubernetes
-    Minikube ou un cluster Kubernetes fonctionnel
+- Docker
+- Kubernetes
+- Minikube ou un cluster Kubernetes fonctionnel
 
 ### Architecture du projet
 
